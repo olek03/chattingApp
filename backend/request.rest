@@ -1,0 +1,40 @@
+POST http://localhost:4000/new
+Content-Type: application/json
+
+{
+    "username": "olek",
+    "password": "haslo"
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "olek",
+    "password": "haslo"
+}
+
+###
+
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9sZWsiLCJpYXQiOjE2NDU3Mzg3MjMsImV4cCI6MTY0NTczODc1M30.bEhXreLEoJXRjJsacF5ePxtKdqmnTcgfyNEDWFj_fiY
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9sZWsiLCJpYXQiOjE2NDU3Mzg2OTB9.47pArcxwD1De7N0DncLHfXqo66k-R2affrvbtmzaZPk"
+}
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9sZWsiLCJpYXQiOjE2NDU3Mzg2OTB9.47pArcxwD1De7N0DncLHfXqo66k-R2affrvbtmzaZPk"
+}
