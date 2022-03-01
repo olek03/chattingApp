@@ -1,4 +1,4 @@
-POST http://localhost:4000/new
+POST http://localhost:5000/new
 Content-Type: application/json
 
 {
@@ -8,7 +8,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:4000/login
+POST http://localhost:5000/login
 Content-Type: application/json
 
 {
@@ -18,23 +18,28 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:4000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9sZWsiLCJpYXQiOjE2NDU3Mzg3MjMsImV4cCI6MTY0NTczODc1M30.bEhXreLEoJXRjJsacF5ePxtKdqmnTcgfyNEDWFj_fiY
+GET http://localhost:5000/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5vdGlmaWNhdGlvbnMiOltdLCJjb252ZXJzYXRpb25zIjpbXSwiX2lkIjoiNjIxYTU4MmJjZjgxZTQ1YjU1ZmQzMTQ0IiwidXNlcm5hbWUiOiJvbGVrIiwicGFzc3dvcmQiOiIkMmIkMTAkUlBpZ3dCREl3NWxGOXlQR2pnRXI2dS41RGVGc01SYkRpRjNDSmpHLjFpY2tQY1prZVZlS2kiLCJwYXJ0aWNpcGFudHMiOltdLCJfX3YiOjB9LCJpYXQiOjE2NDU4OTg3MTUsImV4cCI6MTY0NTg5ODcyNX0.IqE3JknelVrU03b0ywiLIGFd_JAPNiVtPMTGoebb-gQ
 
 ###
 
-POST http://localhost:4000/token
+POST http://localhost:5000/token
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9sZWsiLCJpYXQiOjE2NDU3Mzg2OTB9.47pArcxwD1De7N0DncLHfXqo66k-R2affrvbtmzaZPk"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9sZWsiLCJpYXQiOjE2NDU3ODAyNjZ9.h-5X40LT-N_aqpObuQWuXlk6FNY4PKPdN6LYPE6WIAw"
 }
 
 ###
 
-DELETE http://localhost:4000/logout
+DELETE http://localhost:5000/logout
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9sZWsiLCJpYXQiOjE2NDU3Mzg2OTB9.47pArcxwD1De7N0DncLHfXqo66k-R2affrvbtmzaZPk"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9sZWsiLCJpYXQiOjE2NDU3ODAyNjZ9.h-5X40LT-N_aqpObuQWuXlk6FNY4PKPdN6LYPE6WIAw"
 }
+
+###
+
+POST http://localhost:5000/newchat
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyMWE4YmU2MzFmM2NiODNhODA0YjllMiIsInVzZXJuYW1lIjoib2xlayIsImlkIjo4MTQ4LCJwYXNzd29yZCI6IiQyYiQxMCREWVg1S292M3puRS80czRBcGdaQ3dPNGdNaDNJT2pUWUQzVjRnOUQuQndvRk1ScXVGNGVWMiIsIm5vdGlmaWNhdGlvbnMiOltdLCJjb252ZXJzYXRpb25zIjpbXSwiX192IjowfSwiaWF0IjoxNjQ1OTUyNjM0LCJleHAiOjE2NDU5NTI2NTR9.IvHfUCKW1I2cTVH2y_SXkT3YrRPRgX3nizHo2wnLioY

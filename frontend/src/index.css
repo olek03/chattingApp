@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+    /* border: solid 1px; */
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    font-size: 2rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form {
+    text-align: center;
+    width: min-content;
+    height: fit-content;
+    padding: 1px 20px 50px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 1px 1px white;
+    background-color: white;
+}
+
+.dashboard {
+    width: 90vw;
+    height: 90vh;
+    padding: 1px 20px 50px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 1px 1px white;
+    background-color: white;
+}
+
+.form-input {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 3px 3px 3px 7px;
+    margin-top: 20px;
+}
+
+.field {
+    width: 100%;
+    height: fit-content;
+}
+
+h1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: limegreen;
+    border-radius: 10px;
+    padding: 7px 15px 7px 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: max-content;
+}
+
+button:hover {
+    background-color: rgb(51, 158, 51);
+    cursor: pointer;
+}
+
+.create {
+    margin-top: 0px;
+    text-shadow: 0 4px 5px lightskyblue;   
+}
+
+.button-wrapper {
+    width: 100%;
+}
+
+a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.link {
+    color: rgb(187, 19, 187);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: purple;
+}
+
+.conversation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.plus {
+    margin-top: 0px;
+    border-radius: 100px;
+    padding: 5px 15px 5px 15px;
+}
+
+.new-conversation {
+    position: absolute;
+    z-index: 999;
+    width: 70vw;
+    height: 40vh;
+    background-color: rgb(239, 249, 255);
+    text-align: center;
+    box-shadow: 0 0 2px 2px white;
+    border-radius: 30px;
+}
+
+.button-back {
+    display: flex;
+    height: fit-content;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    background-color: crimson;
+    border-radius: 40px;
+}
+
+.button-back:hover {
+    background-color: red;
+}
+
+.button-logout {
+    font-size: 1rem;
+    background-color: crimson;
+}
+
+.button-logout:hover {
+    background-color: red;
+}
+
+.title {
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+}
+
+.new-conversation form {
+    height: fit-content;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    margin-top: 15px;
+}
+
+.new-conversation input {
+    padding: 2px 2px 2px 5px;
+    border-radius: 20px;
+}
+
+.new-conversation label {
+    font-size: 1.25rem;
+}
+
+.label-wrapper {
+    width: 100%;
+}
+
+.button-open {
+    margin-top: 7vh;
+}
+
+.chat {
+    margin-left: 20px;
+    width: 50%;
+    height: fit-content;
+    border-radius: 30px;
+    box-shadow: 0 0 2px 2px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 20px;
+    background-color: rgb(242, 242, 242);
+}
+
+.chat:hover {
+    box-shadow: 0 0 5px 5px lightblue;
+    cursor: pointer;
+}
+
+.chat-window {
+    position: absolute;
+    z-index: 999;
+    width: 70vw;
+    height: 90vh;
+    background-color: rgb(239, 249, 255);
+    text-align: center;
+    box-shadow: 0 0 2px 2px white;
+    border-radius: 30px;
+}
+
+.messages-window {
+    height: 65vh;
+    padding: 3%;
+    overflow: scroll;
+    overflow-x: hidden;
+    direction: inherit;
+}
+
+.textfield {
+    resize: none;
+    width: 70%;
+    margin: 0px 15px 0px 15px;
+    border: none;
+    box-shadow: 0 0 2px 1px;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-send {
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.message {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 2px 2px rgb(240, 240, 240);
+    text-align: left;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-names {
+    margin: 20px 20px 20px 0px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.button-notifications {
+    background-color: cornflowerblue;
+    margin: 0px;
+    padding: 2px 15px 2px 15px;
+    font-size: 1.25rem;
+}
+
+.button-notifications:hover {
+    background-color: rgb(64, 121, 226);
+}
+
+.notifications {
+    font-size: 1rem;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    top: 8px;
+}
+
+.notifications-bar {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    bottom: 10px;
+}
+
+.notifications-window {
+    font-size: 1rem;
+    position: absolute;
+    top: 7vh;
+    z-index: 999;
+    width: 30vw;
+    height: 50vh;
+    background-color: rgb(239, 249, 255);
+    text-align: center;
+    box-shadow: 0 0 10px 20px white;
+    border-radius: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.notification {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 2px 2px rgb(173, 215, 242);
+    padding: 0px 10px 0px 10px;
+}
+
+.button-clear {
+    font-size: 0.75rem;
+    padding: 5px 10px 5px 10px;
+    background-color: crimson;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.button-clear:hover {
+    background-color: red;
+}
